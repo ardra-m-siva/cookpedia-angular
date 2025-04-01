@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row align-items-center my-5">
+        <div class="col-8">
+            <div class="d-flex justify-content-center">
+                <div class="border  p-5" >
+                  <form [formGroup]="registerForm" (ngSubmit)="register()">
+                        <h2 class="fw-bolder text-center"><i class="fa-solid fa-graduation-cap text-success"></i> Cookpedia</h2>
+                        <input type="text" name="username" formControlName="username" id="" class="form-control mt-5" placeholder="Username">
+                        @if(registerForm.get('username')?.errors && registerForm.get('username')?.touched){
+                            <div class="text-danger fw-bolder">Invalid Username</div>
+                        }
+                        <input type="text" name="email" formControlName="email"  id="" class="form-control mt-3" placeholder="E Mail">
+                        @if(registerForm.get('email')?.errors && registerForm.get('email')?.touched){
+                            <div class="text-danger fw-bolder">Invalid Email</div>
+                        }
+                        <input type="password" name="password" formControlName="password"  id="" class="form-control mt-3" placeholder="Password">
+                        @if(registerForm.get('password')?.errors && registerForm.get('password')?.touched){
+                            <div class="text-danger fw-bolder">Invalid Password</div>
+                        }
+                        <button class="btn btn-success w-100 mt-3">Register</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 ">
+            <h2 class="fw-bolder">Create a New <br> Account</h2>
+            <h4 class="text-secondary">What You will get?</h4>
+            <ul>
+                <li>Different Recipes</li>
+                <li>Easy way to Make Recipes</li>
+                <li>Save y0ur Favourite Recipes</li>
+                <li>Download Your Recipes</li>
+            </ul>
+        </div>
+    </div>
+
+    <app-footer></app-footer>
+
+</div>

@@ -1,0 +1,64 @@
+<div class="container">
+    <app-header></app-header>
+    <div class=" bg-success text-light text-center p-5 " style="height: 300px;">
+        <h4>Contact Us</h4>
+        <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore, impedit ea, ipsam
+            non distinctio nemo, enim minima inventore aliquid sit illo. Accusamus facere animi nostrum provident
+            sapiente dolorem eveniet.</p>
+    </div>
+    <div class="row p-5 gap-6  align-items-end">
+        <div class="col-6">
+            <h3 class="fw-bold">Get In Touch</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eaque eveniet magnam doloribus
+                perspiciatis officia hic deleniti blanditiis necessitatibus maiores! Aliquid quia velit, voluptates ut
+                recusandae consectetur cumque quidem similique.
+            </p>
+            <div class="d-flex align-items-center ">
+                <i class="fa-solid fa-location-dot bg-success p-2 text-white rounded-circle"></i>
+                <div class="ms-3 ">
+                    <p class="fw-bolder">Address</p>
+                    <p>NYC 4567, PO Berlin</p>
+                </div>
+
+            </div>
+            <div class="d-flex align-items-center ">
+                <i class="fa-solid fa-phone-flip bg-success p-2 text-white rounded-circle"></i>
+                <div class="ms-3">
+                    <p class="fw-bolder">Phone Number</p>
+                    <p>9809697889</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-center ">
+                <i class="fa-solid fa-envelope bg-success p-2 text-white rounded-circle"></i>
+                <div class="ms-3">
+                    <p class="fw-bolder">Email </p>
+                    <p>xyz.com</p>
+                </div>
+            </div>
+            <p>Follow Us</p>
+            <div class="d-flex ">
+                <i class="fa-brands fa-facebook text-success me-4 fa-xl"></i>
+                <i class="fa-brands fa-instagram text-success me-4 fa-xl"></i>
+                <i class="fa-brands fa-twitter text-success me-4 fa-xl"></i>
+                <i class="fa-brands fa-youtube text-success fa-xl"></i>
+            </div>
+        </div>
+        <div class="col-5 ">
+            <div class="border rounded shadow p-5">
+            <form [formGroup]="testimonyForm" (ngSubmit)="addTestimony()">
+                    <h4 class="mb-5">Client Testimony</h4>
+                    <input name="name" formControlName="name" type="text" placeholder="Name" class="form-control mb-3">
+                    <input name="email" formControlName="email" type="email" placeholder="Email" class="form-control mb-3">
+                    <textarea name="message" formControlName="message" id="" placeholder="Message " class="p-2 w-100 form-control"></textarea>
+                    <p class="text-secondary my-3">By submitting, you agree with the terms and conditions of our website. We may use your details on our site</p>
+                    <div class=" d-flex justify-content-end"><input type="submit" value="Submit" class="btn btn-success"></div>
+            </form>
+            </div>
+        </div>
+    </div>
+    <div class="row my-5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.9751535676874!2d76.34006767450875!3d10.018908872710194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080ffce877d5ef%3A0x8bef6870ad11b98!2sLuminar%20Technolab%20-Best%20Python%20Course%2C%20AI%2C%20Software%20Testing%2C%20MERN%20Stack%2C%20Java%2C%20Asp.net%20%26%20Software%20Training%20Institute%20in%20Kochi!5e0!3m2!1sen!2sin!4v1742102900189!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <app-footer></app-footer>
+</div>
